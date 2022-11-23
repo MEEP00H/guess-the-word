@@ -4,7 +4,7 @@ import Head from "next/head";
 function MetaHead() {
   const title = "Guess the word";
   const description = "เกมส์ใบ้คนละคำ";
-  const web_url = "https://wevis.info/initiativelaw";
+  const web_url = "https://guess-the-word-iota.vercel.app/";
   const og_image = "og_image.jpg";
   return (
     <Head>
@@ -28,8 +28,6 @@ function MetaHead() {
       <meta name="twitter:card" content="summary_large_image" />
 
       <meta name="twitter:image:src" content={web_url + "/" + og_image} />
-
-      <link rel="stylesheet" href="https://design-systems.wevis.info/typography.css" />
     </Head>
   );
 }
