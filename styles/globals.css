@@ -8,5 +8,9 @@ html {
   overflow-x: hidden;
   @apply text-white bg-black;
 }
+input,
+input[placeholder] {
+  text-align: center;
+}
 @tailwind components;
 @tailwind utilities;

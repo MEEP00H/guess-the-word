@@ -53,7 +53,7 @@
   font-family: "Kondolar";
 }
 .h1 {
-  @apply lg:text-[300px] text-[260px];
+  @apply lg:text-[300px] md:text-[200px] text-[100px];
 }
 .h2 {
   @apply lg:text-[200px] text-[48px];
