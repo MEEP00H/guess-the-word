@@ -4,7 +4,7 @@ import Head from "next/head";
 function MetaHead() {
   const title = "Guess the word";
   const description = "เกมส์ใบ้คนละคำ";
-  const web_url = "https://guess-the-word-iota.vercel.app/";
+  const web_url = "https://guess-the-word-iota.vercel.app";
   const og_image = "og_image.jpg";
   return (
     <Head>
