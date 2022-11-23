@@ -44,7 +44,7 @@ const Starter = ({ expiryTimestamp }) => {
         </div>
       )}
       <p className=" absolute top-5 left-[90%] translate-x-[-50%] z-30 h7">{point}/40</p>
-      <div className=" font-bold flex flex-col h-screen items-center justify-center">
+      <div className=" font-bold flex flex-col h-[90vh] lg:h-[100vh] items-center justify-center">
         <WordList word={sample[index]} />
         <div className="flex h3 w-full h-[30%] flex-1">
           <button onClick={() => incorrect()} className="flex-1 bg-red-600" />
