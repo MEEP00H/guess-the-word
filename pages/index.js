@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { team as teamAtom } from "atom";
+import start from "assets/images/start.png";
 
 export default function Home() {
   const [isStart, setIsStart] = useState(false);
@@ -25,19 +26,24 @@ export default function Home() {
     <div className=" container mx-auto ">
       {!isCreate && (
         <div className=" absolute inset-0 z-50 bg-purple-500 flex flex-col items-center justify-center ">
-          <input
-            type="text"
-            name="name"
-            placeholder="Team"
-            className="h5 border border-black rounded-md text-black w-[300px] md:w-[400px] font-sans h-[53px]"
-            onChange={inputHandle}
-          />
-          <button
-            className=" w-[300px] md:w-[400px] h-[53px] bg-slate-800 text-white mt-7 rounded-md h6 font-bold"
-            onClick={() => okHandle()}
-          >
-            OK, go!
-          </button>
+          <div className=" w-[300px] h-[300px] ">
+            <Image src={start} alt="start" width="200px" height="200px" />
+          </div>
+          <div className="flex flex-col">
+            <input
+              type="text"
+              name="name"
+              placeholder="Team"
+              className="h5 border border-black rounded-md text-black w-[300px] md:w-[400px] font-sans h-[53px]"
+              onChange={inputHandle}
+            />
+            <button
+              className=" w-[300px] md:w-[400px] h-[53px] bg-slate-800 text-white mt-7 rounded-md h6 font-bold"
+              onClick={() => okHandle()}
+            >
+              OK, go!
+            </button>
+          </div>
         </div>
       )}
 
