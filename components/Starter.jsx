@@ -15,7 +15,7 @@ const Starter = ({ expiryTimestamp }) => {
   const [counting, setCounting] = useRecoilState(countingAtom);
   const [index, setIndex] = useState(0);
   const [point, setPont] = useState(0);
-  const [sample, setSample] = useState(_.sampleSize(words, 5));
+  const [sample, setSample] = useState(_.sampleSize(words, 40));
 
   const correct = () => {
     _.pull(sample, sample[index]);
