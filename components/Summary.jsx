@@ -39,7 +39,7 @@ export const Summary = ({ point }) => {
 
   return (
     <div className=" absolute inset-0  z-50 bg-red-200 flex flex-col " id="summary">
-      <div className=" mt-[3%] text-center  font-bold">
+      <div className=" mt-[10%] text-center  font-bold">
         <p className=" h5 text-black">🎉 {team} 🎉</p>
         <p className="h3"> {point}/40 </p>
       </div>
