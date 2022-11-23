@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Kondolar";
+  src: url("../assets/fonts/KondolarThai-Black.woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kondolar";
+  src: url("../assets/fonts/KondolarThai-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kondolar";
+  src: url("../assets/fonts/KondolarThai-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anuphan";
+  src: url("../assets/fonts/Anuphan-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Anuphan";
+  src: url("../assets/fonts/Anuphan-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import "tailwindcss/base";
+
+.h1,
+.h2,
+.h3 {
+  line-height: 125%;
+  font-family: "Kondolar";
+}
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.h9,
+.h10,
+.h11 {
+  line-height: 140%;
+  font-family: "Kondolar";
+}
+.h1 {
+  @apply lg:text-[300px] text-[260px];
+}
+.h2 {
+  @apply lg:text-[200px] text-[48px];
+}
+.h3 {
+  @apply lg:text-[60px] text-[36px];
+}
+.h4 {
+  @apply lg:text-[48px] text-[32px];
+}
+.h5 {
+  @apply lg:text-[36px] text-[28px];
+}
+.h6 {
+  @apply lg:text-[32px] text-[24px];
+}
+.h7 {
+  @apply lg:text-[28px] text-[21px];
+}
+.h8 {
+  @apply lg:text-[24px] text-[18px];
+}
+.h9 {
+  @apply lg:text-[21px] text-[16px];
+}
+.h10 {
+  @apply lg:text-[18px] text-[15px];
+}
+.h11 {
+  @apply lg:text-[16px] text-[14px];
+}
+
+.b1 {
+  line-height: 150%;
+  @apply lg:text-[32px] text-[24px];
+}
+.b2 {
+  line-height: 150%;
+  @apply lg:text-[24px] text-[21px];
+}
+.b3 {
+  line-height: 150%;
+  @apply lg:text-[21px] text-[18px];
+}
+.b4 {
+  line-height: 150%;
+  @apply lg:text-[18px] text-[16px];
+}
+.b5 {
+  line-height: 150%;
+  @apply lg:text-[16px] text-[14px];
+}
+.b6 {
+  line-height: 150%;
+  @apply lg:text-[14px] text-[13px];
+}
+.b7 {
+  line-height: 150%;
+  @apply lg:text-[12px] text-[9px];
+}
+
+.u1 {
+  line-height: 125%;
+  @apply text-[20px];
+}
+.u2 {
+  line-height: 125%;
+  @apply text-[18px];
+}
+.u3 {
+  line-height: 125%;
+  @apply text-[20px];
+}
+.u4 {
+  line-height: 125%;
+  @apply text-[20px];
+}
+.u5 {
+  line-height: 125%;
+  @apply text-[20px];
+}
