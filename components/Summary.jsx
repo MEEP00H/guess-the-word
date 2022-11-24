@@ -1,10 +1,12 @@
 import { useRecoilState } from "recoil";
-import { team as teamAtom } from "atom";
+import { team as teamAtom, counting as countingAtom } from "atom";
 import _ from "lodash";
 import SheetDB from "sheetdb-js";
 import { useEffect, useState } from "react";
+
 export const Summary = ({ point }) => {
   const [team, _] = useRecoilState(teamAtom);
+  const [counting, setCounting] = useRecoilState(countingAtom);
   const [result, setResult] = useState([]);
   const restart = () => {
     location.reload();
@@ -17,7 +19,7 @@ export const Summary = ({ point }) => {
   useEffect(() => {
     SheetDB.write("https://sheetdb.io/api/v1/0wpzbzraz8m7s", {
       sheet: "score",
-      data: { name: team, point: point },
+      data: { name: team, point: point, time: counting[1] + ":" + counting[0] },
     }).then(
       function (result) {
         console.log(result);
@@ -30,6 +32,7 @@ export const Summary = ({ point }) => {
     SheetDB.read("https://sheetdb.io/api/v1/0wpzbzraz8m7s", {}).then(
       function (result) {
         setResult(sorting([...result, { name: team, point: point }]));
+        console.log(result);
       },
       function (error) {
         console.log(error);
