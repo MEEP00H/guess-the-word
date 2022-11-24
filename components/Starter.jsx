@@ -29,8 +29,12 @@ const Starter = ({ expiryTimestamp }) => {
     if (index >= sample.length - 1) setIndex(0);
   };
 
+  const end = () => {
+    setSample([]);
+  };
+
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 900);
+  time.setSeconds(time.getSeconds() + 600);
 
   return (
     <div>
@@ -45,6 +49,9 @@ const Starter = ({ expiryTimestamp }) => {
       )}
       <p className=" absolute top-5 left-[90%] translate-x-[-50%] z-30 h7">{point}/40</p>
       <div className=" font-bold flex flex-col h-[90vh] lg:h-[100vh] items-center justify-center">
+        <button className=" absolute top-5 left-[10%] translate-x-[-50%] h7" onClick={() => end()}>
+          End
+        </button>
         <WordList word={sample[index]} />
         <div className="flex h3 w-full h-[30%] flex-1">
           <button onClick={() => incorrect()} className="flex-1 bg-red-600" />
